@@ -1,0 +1,14 @@
+.article-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.article-list.reverse{
+  flex-direction: row-reverse;
+}
+.article-list__article{
+  width: 300px;
+  padding: 10px;
+  background: #eee;
+  margin: 10px;
+}
