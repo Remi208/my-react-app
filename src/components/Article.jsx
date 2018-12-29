@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
-class Article extends React.Component{
+class Article extends PureComponent{
   constructor(props){
     super(props)
 
     this.state = {
-      opened: props.defaultOpened
+      opened: false
     }
   }
 

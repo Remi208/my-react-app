@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Article from '../Article'
 import './styles.css';
 
-class ArticleList extends React.Component{
+class ArticleList extends Component{
   constructor(){
     super();
 
