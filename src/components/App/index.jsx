@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-import ArticleList from './ArticleList/'
-import data from '../data'
+import ArticleList from '../ArticleList/'
+import data from '../../data'
 
 class App extends Component {
   constructor(){
