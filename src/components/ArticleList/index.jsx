@@ -8,9 +8,13 @@ class ArticleList extends Component{
     super();
 
     this.state = {
-
+      openedID: null
     }
   }
+
+  handleClose = openedID => this.setState({
+    openedID: this.state.openedID === openedID ? null : openedID
+  });
 
   render(){
     const {list} = this.props;
@@ -18,10 +22,13 @@ class ArticleList extends Component{
       <div className="article-list">
       {
         list.map(
-          single => <Article 
-            single={single}
-            key={single.id}
-          />
+          single =>
+            <Article 
+              single={single}
+              key={single.id}
+              opened={this.state.openedID === single.id}
+              btnClick = {this.handleClose.bind(this, single.id)}
+            />
         )
       }
       </div>

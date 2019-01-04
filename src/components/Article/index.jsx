@@ -5,28 +5,22 @@ class Article extends PureComponent{
     super(props)
 
     this.state = {
-      opened: false
+      // opened: false
     }
-  }
-
-  handleClose() {
-    this.setState({
-      opened: !this.state.opened
-    });
   }
   
   render(){
-    const {single} = this.props
+    const {single, opened, btnClick} = this.props
     return (
       <article className="article-list__article">
         <h2>{single.title}</h2>
-        <button onClick={this.handleClose.bind(this)}>
+        <button onClick={btnClick}>
           {
-            this.state.opened ? 'Close' : 'Open'
+            opened ? 'Close' : 'Open'
           }
         </button>
         {
-          this.state.opened ? <p>{single.text}</p> : ''
+          opened ? <p>{single.text}</p> : ''
         }
       </article>
     );
