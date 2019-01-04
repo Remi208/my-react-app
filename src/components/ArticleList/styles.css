@@ -9,6 +9,7 @@
 .article-list__article{
   width: 300px;
   padding: 10px;
-  background: #eee;
+  background: #ffe03d;
   margin: 10px;
+  color: #19305a;
 }
