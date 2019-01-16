@@ -1,0 +1,2 @@
+export const CHANGE_NAME = 'CHANGE_NAME';
+export const CHANGE_SECOND_NAME = 'CHANGE_SECOND_NAME';

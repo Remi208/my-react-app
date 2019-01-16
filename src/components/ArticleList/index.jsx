@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import Article from '../Article/'
-import './styles.css';
+import './styles.scss';
 
 class ArticleList extends Component{
   constructor(){

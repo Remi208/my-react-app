@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import ArticleList from '../ArticleList/'
 import data from '../../data'
-import './styles.css'
+import './styles.scss'
 
 class App extends Component {
   constructor(){
