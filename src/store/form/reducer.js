@@ -1,9 +1,10 @@
 import {CHANGE_NAME, CHANGE_SECOND_NAME} from './action-types'
+import Immutable from 'seamless-immutable';
 
-export const initialState = {
+export const initialState = Immutable({
   firstName: 'Firstname',
   secondName: 'Secondname',
-}
+});
 
 export const rootReducer = (state = initialState, action) => {
   switch (action.type){
